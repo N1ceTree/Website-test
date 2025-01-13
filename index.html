@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+          rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Transitions</title>
+
+</head>
+
+<body>
+    <video class="videobg" autoplay plays-inline muted loop>
+        <source src="blender final.mp4" type="video/mp4" />
+    </video>
+    <div class="gamin">
+
+    </div>
+    <div class="navbar">
+        <div class="menu">
+            <h3 class="logo">Portfolio</h3>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+            </div>
+        </div>
+    </div>
+    <div class="whole">
+
+        <div class="allimg">
+            <div class="idkdiv">
+                <p id="rrrr">this an elephant</p>
+                <img class="imgg" src="elephant.png" onclick="DoSomething();" alt="Alternate Text" />
+            </div>
+            <div class="idkdiv">
+                <p id="rrrr">this is an elephant</p>
+                <img class="imgg" src="African_elephant_warning_raised_trunk.jpg" onclick="DoSomething();" alt="Alternate Text" />
+            </div>
+            <div class="idkdiv">
+                <p id="rrrr">This is a lion</p>
+                <img class="imgg" src="020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg" onclick="DoSomething();" alt="Alternate Text" />
+            </div>
+        </div>
+        <div class="footer">
+        </div>
+    </div>
+    
+
+
+
+    <!--<input type="image" src="elephant.png" name="saveForm" class="idkdiv" id="saveForm" />-->
+    <!--<div class="container">
+    <div class="item item-1"><button class="btn">learn more</button></div>
+        <div class="item item-2"><button class="bt2n">learn more</button></div>
+        <div class="item item-3">Item 3</div>
+        </div>-->
+    <!--<div class="idkdiv">
+    <h1 class="text">text</h1>
+    </div>-->
+
+
+    <script>
+        function DoSomething() {
+            document.getElementByClass("rrrr").innerHTML = document.getElementById("rrrr").innerHTML + "s";
+        }
+
+    </script>
+    <script>
+        const hamburger_menu = document.querySelector(".hamburger-menu");
+        const container = document.querySelector(".container");
+        hamburger_menu.addEventListener("click", () => {
+            container.classList.toggle("active");
+        })
+    </script>
+</body>
+</html>
+
+
